@@ -30,15 +30,7 @@ public class BasketPageObject extends PageObject implements BasketPageObjectInte
     @Override
     public boolean isEmpty() {
 
-        return browser.findElements(By.xpath("/hierarchy/android" +
-                ".widget.FrameLayout/android.widget." +
-                "LinearLayout/android.widget.F" +
-                "rameLayout/android.view.ViewGroup" +
-                "/android.widget.FrameLayout[2]/androi" +
-                "d.widget.LinearLayout/android.widget.Rel" +
-                "ativeLayout/android.support.v7.widget.RecyclerV" +
-                "iew/android.widget.LinearLayout[1]/android.widget.Line" +
-                "arLayout/android.widget.TextView[1]")).size()>0 ;
+        return browser.findElement(By.id("com.getir.getirtestingcasestudy:id/empty_textview")).getText().equalsIgnoreCase("Your card is empty!") ;
 
 
     }
