@@ -22,7 +22,9 @@ public class StartPerformanceTest {
         ActorSystem system = ActorSystem.create("getir-scenario-performance-test");
         final ActorRef monitoringActor = system.actorOf(MonitorActor.props(), "monitor");
         final ActorRef customerSupervisor = system.actorOf(CustomersSupervisorActor.props(),"customers");
+        customerSupervisor.tell(new CustomersSupervisorActor.CreateCustomers(numCustomers, 60 * rampupTime, monitoringActor), ActorRef.noSender());
         system.scheduler().scheduleOnce(FiniteDuration.create(duration, TimeUnit.MINUTES),
                 monitoringActor, new MonitorActor.ShutDown(), system.dispatcher(), null);
+
     }
 }
