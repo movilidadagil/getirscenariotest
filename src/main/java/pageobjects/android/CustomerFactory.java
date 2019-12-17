@@ -22,6 +22,18 @@ public class CustomerFactory {
     }
 
 
+    public Customer loginCustomer(Customer customer){
+
+        /*
+        must be api call here.
+         */
+        customer = new Customer();
+        customer.email ="hello@getir.com" ;
+        customer.password = "hello";
+
+
+        return customer;
+    }
     public Customer consumeNewTestCustomer() throws Exception {
         return generateCustomerData();
     }

@@ -16,8 +16,8 @@ public class MonitoringEventLog {
         events = new ArrayList<MonitoringEvent>();
         try{
             //yyyy-MM-ddhh:mm:ss.SSS-Z"
-            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss.SSS-Z");
-            String filename = "target/"+simpleDateFormat.format(new Date()+ " -performance.csv");
+            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd-hh:mm:ss");
+            String filename = "target/"+simpleDateFormat.format(new Date())+ " -performance.csv";
             fileWriter = new FileWriter(filename,true);
             fileWriter.write(MonitoringEvent.getCsvHeaderRow()+"\n");
             fileWriter.flush();
