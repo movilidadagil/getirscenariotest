@@ -1,6 +1,9 @@
-package pageobjects.android;
+package pageobjects.android.pageobjects;
 
 import org.openqa.selenium.WebDriver;
+import pageobjects.android.interfaces.PageObjectInterface;
+import pageobjects.android.TestRunContext;
+import pageobjects.android.utils.WebDriverUtils;
 
 /* Created by JavaUnifiedTester   hasanaligul  2019-11-26  */
 public abstract  class PageObject implements PageObjectInterface {

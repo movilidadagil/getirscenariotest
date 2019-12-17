@@ -1,7 +1,8 @@
 package pageobjects.android;
 
 import com.google.gson.GsonBuilder;
-import pageobjects.FileUtils;
+import pageobjects.android.utils.FileUtils;
+import pageobjects.android.interfaces.Environments;
 
 import java.io.File;
 

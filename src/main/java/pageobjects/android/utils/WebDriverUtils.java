@@ -1,11 +1,11 @@
-package pageobjects.android;
+package pageobjects.android.utils;
 
-import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.ios.IOSDriver;
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import pageobjects.android.TestRunContext;
+import pageobjects.android.interfaces.Environments;
+import pageobjects.android.pageobjects.PageObject;
 
 import java.io.File;
 import java.net.MalformedURLException;

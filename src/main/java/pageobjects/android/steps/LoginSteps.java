@@ -6,6 +6,9 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import pageobjects.android.*;
+import pageobjects.android.context.CustomContextHelpers;
+import pageobjects.android.interfaces.LoginPageObjectInterface;
+
 import static org.junit.Assert.assertTrue;
 
 public class LoginSteps {

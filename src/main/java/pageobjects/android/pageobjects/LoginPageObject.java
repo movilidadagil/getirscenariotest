@@ -1,10 +1,9 @@
-package pageobjects.android;
+package pageobjects.android.pageobjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
-import java.util.List;
+import pageobjects.android.interfaces.LoginPageObjectInterface;
 
 /* Created by JavaUnifiedTester   hasanaligul  2019-11-26  */
 public class LoginPageObject extends PageObject implements LoginPageObjectInterface {

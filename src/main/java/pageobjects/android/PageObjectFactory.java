@@ -1,6 +1,7 @@
 package pageobjects.android;
 
 import org.openqa.selenium.WebDriver;
+import pageobjects.android.pageobjects.PageObject;
 
 import java.lang.reflect.Constructor;
 

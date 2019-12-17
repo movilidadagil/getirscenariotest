@@ -1,10 +1,11 @@
-package pageobjects.android;
+package pageobjects.android.pageobjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import pageobjects.android.interfaces.CategoriesPageObjectInterface;
 
 /* Created by JavaUnifiedTester   hasanaligul  2019-11-27  */
-public class CategoriesPageObject extends PageObject implements CategoriesPageObjectInterface{
+public class CategoriesPageObject extends PageObject implements CategoriesPageObjectInterface {
     public CategoriesPageObject(WebDriver browser) throws Exception {
         super(browser);
     }

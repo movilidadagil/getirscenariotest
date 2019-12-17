@@ -2,6 +2,8 @@ package pageobjects.android;
 
 /* Created by JavaUnifiedTester   hasanaligul  2019-11-26  */
 
+import pageobjects.android.interfaces.Environments;
+
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -35,7 +37,7 @@ public class TestRunContext extends HashMap {
             instance = new TestRunContext();
 
             try {
-                instance = (TestRunContext) Class.forName("pageobjects.android.CustomContext").newInstance();
+                instance = (TestRunContext) Class.forName("pageobjects.android.context.CustomContext").newInstance();
             } catch (Exception var1) {
             }
         }

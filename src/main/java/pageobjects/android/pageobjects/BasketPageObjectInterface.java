@@ -1,7 +1,9 @@
-package pageobjects.android;
+package pageobjects.android.pageobjects;
+
+import pageobjects.android.interfaces.PageObjectInterface;
 
 /* Created by JavaUnifiedTester   hasanaligul  2019-11-27  */
-public interface BasketPageObjectInterface  extends PageObjectInterface{
+public interface BasketPageObjectInterface  extends PageObjectInterface {
 
     void chooseProducts(String product);
     String[] getChosenProducts();

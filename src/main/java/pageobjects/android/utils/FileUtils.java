@@ -1,4 +1,4 @@
-package pageobjects;
+package pageobjects.android.utils;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

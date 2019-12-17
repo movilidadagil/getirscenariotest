@@ -1,4 +1,4 @@
-package pageobjects.android;
+package pageobjects.android.interfaces;
 
 /* Created by JavaUnifiedTester   hasanaligul  2019-11-26  */
 

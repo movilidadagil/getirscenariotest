@@ -1,10 +1,12 @@
-package pageobjects.android;
+package pageobjects.android.pageobjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import pageobjects.android.interfaces.ShoppingCartPageObjectInterface;
+import pageobjects.android.utils.WebDriverUtils;
 
 /* Created by JavaUnifiedTester   hasanaligul  2019-11-27  */
-public class ShoppingCartPageObject extends PageObject implements ShoppingCartPageObjectInterface{
+public class ShoppingCartPageObject extends PageObject implements ShoppingCartPageObjectInterface {
 
     public ShoppingCartPageObject(WebDriver browser) throws Exception {
         super(browser);
